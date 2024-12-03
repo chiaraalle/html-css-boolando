@@ -11,12 +11,72 @@
 
 header {
     background-color: orangered;
+    position: sticky;
+    width: 100%;
 }
 
 ul{
     list-style-type: none;
+    display: flex;
 }
 
 a {
     text-decoration: none;
 }
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 40%;
+}
+
+main {
+    position: relative;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 5%;
+}
+
+.container-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    flex-wrap: wrap;
+    
+}
+
+.preferito {
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+
+}
+
+
+
+/*.sconto {  
+    background-color: red;   
+    border: 10px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+   }*/
+
