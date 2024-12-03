@@ -47,6 +47,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 img {
@@ -54,9 +55,10 @@ img {
 }
 
 .items {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
     flex-wrap: wrap;
     
 }
@@ -68,15 +70,33 @@ img {
 
 }
 
-
-
-/*.sconto {  
+.sconto {  
     background-color: red;   
     border: 10px;
     width: 40px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    bottom: 30%;
+    left: 0;
     text-align: center;
-   }*/
+   }
+
+.color-green {  
+    background-color: green;   
+    border: 10px;
+    width: 100px;
+    /*position: absolute;
+    bottom: 30%;
+    left: 30%;
+    text-align: center;*/
+   }
+
+   .color-red {
+    color: red;
+   }
+
+   .line-through {
+    color: lightgray;
+    text-decoration: line-through;
+   }
+
 
