@@ -12,12 +12,16 @@
 header {
     background-color: orangered;
     position: sticky;
-    width: 100%;
+    top: 0;
+    padding: 20px 0;
 }
 
 ul{
     list-style-type: none;
-    display: flex;
+}
+
+li > a {
+    color: white
 }
 
 a {
@@ -25,44 +29,46 @@ a {
 }
 
 .container-flex {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .logo {
     display: block;
-    width: 40%;
+    width: 100px;
 }
 
-main {
+ul.list, 
+.icon {
+    display: flex;
+    gap: 10px;
+}
+
+/*main {
     position: relative;
     width: 80%;
     margin-inline: auto;
     margin-block: 5%;
-}
-
-.container-center {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
+}*/
 
 img {
     display: block;
 }
 
-.items {
-    /*background-image: url(../imgs/1.webp);
-    background-size: contain;
-    background-repeat: no-repeat;*/
-    position: relative;
+.items-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-basis: calc(100% / 3);
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }  
+
+.items {
+    flex-basis: calc(100% / 3 -10);
+}
    
 .preferito {
     position: absolute;

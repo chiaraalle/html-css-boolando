@@ -7,12 +7,13 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/debug.css">
+    <script src="https://kit.fontawesome.com/1948ca2821.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container-flex">
             <nav>
-                <ul>
+                <ul class="list">
                     <li><a href="">Donna</a></li>
                     <li><a href="">Uomo</a></li>
                     <li><a href="">Bambino</a></li>
@@ -21,19 +22,19 @@
             <figure>
                 <img class="logo" src="./imgs/boolean-logo.png" alt="logo boolean"></img>
             </figure>
-            <figure>
-                <img src="./imgs/icons-profilo.png" alt="logo utente">
-                <img src="./imgs/icons-cuore.png" alt="logo preferito">
-                <img src="./imgs/icons-borsa-spesa.png" alt="logo borsa della spesa">
-            </figure>
+            <div class="icon">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
             
         </div>
     </header>
 
     <main>
-        <div class="container-center">
+        <div class="items-container">
         <!--primo prodotto-->
-         <div class="items">
+            <div class="items">
                 <span class="preferito">&hearts;</span>
                 <figure>
                     <img width="350px" src="./imgs/1.webp" alt="foto primo modello">
@@ -42,7 +43,7 @@
                     <span class="sconto">-50%</span>
                     <span class="color-green">Sostenibilità</span>
                 </div>
-                <div>
+                <div class="items__bottom">
                     <span>Levi's</span>
                     <h5>RELAXED FIT TEE UNISEX</h5>
                     <span class="color-red">14,99 &euro;</span>
@@ -58,7 +59,7 @@
                 <div class="text">
                     <span class="sconto">-30%</span>
                 </div>
-                <div>
+                <div class="items__bottom">
                     <span>Levi's</span>
                     <h5>RELAXED FIT TEE UNISEX</h5>
                     <span class="color-red">14,99 &euro;</span> 
@@ -74,63 +75,60 @@
                 <div class="text">
                     <span class="sconto">-30%</span>
                 </div>
-                <div>
+                <div class="items__bottom">
+                    <span>Levi's</span>
+                    <h5>RELAXED FIT TEE UNISEX</h5>
+                    <span class="color-red">14,99 &euro;</span> 
+                    <span class="line-through">29,99 &euro;</span>
+                </div>
+            </div>  
+            <!--quarto prodotto-->
+            <div class="items">
+                <span class="preferito">&hearts;</span>
+                <figure>
+                    <img width="350px" src="./imgs/4.webp" alt="foto primo modello">
+                </figure>
+                <div class="text">
+                    <span class="sconto">-50%</span>
+                    <span class="color-green">Sostenibilità</span>
+                </div>
+                <div class="items__bottom">
+                    <span>Levi's</span>
+                    <h5>RELAXED FIT TEE UNISEX</h5>
+                    <span class="color-red">14,99 &euro;</span>
+                    <span class="line-through">29,99 &euro;</span>
+                </div>     
+            </div>        
+            <!--quinto prodotto-->
+            <div class="items">
+                <span class="preferito">&hearts;</span>
+                <figure>
+                    <img width="350px" src="./imgs/5.webp" alt="foto primo modello">
+                </figure>
+                <div class="items__bottom">
                     <span>Levi's</span>
                     <h5>RELAXED FIT TEE UNISEX</h5>
                     <span class="color-red">14,99 &euro;</span> 
                     <span class="line-through">29,99 &euro;</span>
                 </div>
             </div>
-        </div>    
-
-        <div class="container-center">
-            <!--primo prodotto-->
-             <div class="items">
-                    <span class="preferito">&hearts;</span>
-                    <figure>
-                        <img width="350px" src="./imgs/4.webp" alt="foto primo modello">
-                    </figure>
-                    <div class="text">
-                        <span class="sconto">-50%</span>
-                        <span class="color-green">Sostenibilità</span>
-                    </div>
-                    <div>
-                        <span>Levi's</span>
-                        <h5>RELAXED FIT TEE UNISEX</h5>
-                        <span class="color-red">14,99 &euro;</span>
-                        <span class="line-through">29,99 &euro;</span>
-                    </div>     
-                </div>        
-                 <!--secondo prodotto-->
-                <div class="items">
-                    <span class="preferito">&hearts;</span>
-                    <figure>
-                        <img width="350px" src="./imgs/5.webp" alt="foto primo modello">
-                    </figure>
-                    <div>
-                        <span>Levi's</span>
-                        <h5>RELAXED FIT TEE UNISEX</h5>
-                        <span class="color-red">14,99 &euro;</span> 
-                        <span class="line-through">29,99 &euro;</span>
-                    </div>
+            <!--sesto prodotto-->
+            <div class="items">
+                <span class="preferito">&hearts;</span>
+                <figure>
+                    <img width="350px" src="./imgs/6.webp" alt="foto primo modello">
+                </figure>
+                <div class="text">
+                    <span class="color-green position">Sostenibilità</span>
                 </div>
-                <!--terzo prodotto-->
-                <div class="items">
-                    <span class="preferito">&hearts;</span>
-                    <figure>
-                        <img width="350px" src="./imgs/6.webp" alt="foto primo modello">
-                    </figure>
-                    <div class="text">
-                        <span class="color-green position">Sostenibilità</span>
-                    </div>
-                    <div>
-                        <span>Levi's</span>
-                        <h5>RELAXED FIT TEE UNISEX</h5>
-                        <span class="color-red">14,99 &euro;</span> 
-                        <span class="line-through">29,99 &euro;</span>
-                    </div>
+                <div class="items__bottom">
+                    <span>Levi's</span>
+                    <h5>RELAXED FIT TEE UNISEX</h5>
+                    <span class="color-red">14,99 &euro;</span> 
+                    <span class="line-through">29,99 &euro;</span>
                 </div>
-            </div>  
+            </div>
+        </div>  
 
     </main>
 
