@@ -12,6 +12,7 @@
 header {
     background-color: orangered;
     position: sticky;
+    z-index: 1;
     top: 0;
     padding: 20px 0;
 }
@@ -50,6 +51,7 @@ ul.list,
 
 main {
     padding: 20px 0;
+    
 }
 
 .items-container {
@@ -60,7 +62,7 @@ main {
 }  
 
 .items {
-    flex-basis: calc(100% / 3 -10);
+    flex-basis: calc((100% / 3) - 10px);
     flex-grow: 1;
 }
 
